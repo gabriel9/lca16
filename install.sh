@@ -6,7 +6,8 @@ source activate ./mlenv
 conda install cython
 conda install numpy scipy scikit-learn pandas xray pillow
 conda install ipython ipython-notebook matplotlib seaborn
-pip install theano
+#pip install theano  # note -- keras depends on latest devel
+pip install -e ./source_packages/Theano/
 pip install keras
 pip install tweepy
 
